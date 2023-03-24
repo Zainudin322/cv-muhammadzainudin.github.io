@@ -369,6 +369,10 @@
                   id="name"
                   aria-describedby="name"
                   name="nama"
+                  autocomplete="off"
+                  required
+                  oninvalid="this.setCustomValidity('Masukkan nama terlebih dahulu!')"
+                  oninput="this.setCustomValidity('')"
                 />
               </div>
               <div class="mb-3">
@@ -383,6 +387,10 @@
                   id="email"
                   aria-describedby="email"
                   name="email"
+                  autocomplete="off"
+                  required
+                  oninvalid="this.setCustomValidity('Masukkan alamat email terlebih dahulu!')"
+                  oninput="this.setCustomValidity('')"
                 />
               </div>
               <div class="mb-3">
@@ -396,6 +404,9 @@
                   id="pesan"
                   rows="3"
                   name="pesan"
+                  required
+                  oninvalid="this.setCustomValidity('Sampaikan pesan atau saran anda')"
+                  oninput="this.setCustomValidity('')"
                 ></textarea>
               </div>
               <button
